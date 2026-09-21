@@ -1,0 +1,439 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #121212;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100dvh;
+    padding: 2rem 0;
+    display: flex;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+.card{
+    position: relative;
+    width: 230px;
+    height: 300px;
+}
+.boxshadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ff0000;
+    transform: scale(0.8);
+    box-shadow: 0 30px 70px 0 #ff0000;
+    transition: all 0.5s ease-in-out;
+}
+.main{
+    background-color: #ff0000;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        0,
+        rgb(62,0,0) 0%,
+        rgb(255,0,0) 60%,
+        rgb(62,0,0) 100%
+    );
+    position: relative;
+    clip-path: 
+    polygon(
+        0 0,
+        100% 0,
+        100% 40px,
+        100% calc(100% - 40px),
+        calc(100% - 40px) 100%,
+        40px 100%,
+        0 calc(100% - 40px)
+    );
+    box-shadow: rgb(255,0,0) 0 7px 29px 0;
+    transition: all 0.5s ease-in-out;
+}
+.top{
+    position: absolute;
+    width: 0;
+    left: 0;
+    top: 0;
+    height: 0;
+    z-index: 2;
+    border-top: 115px solid #000;
+    border-left: 115px solid transparent;
+    border-right: 115px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+.side{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: #000;
+    height: 101%;
+    clip-path: 
+    polygon(
+        0 0,
+        50% 0,
+        95% 45%,
+        100% 100%,
+        0 100%
+    );
+    transition: all 0.5s ease-in-out;
+}
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+    transform: translateX(50%) scale(-1,1);
+}
+.card:hover .main .top{
+    top: -50px;
+}
+.card:hover .main .left{
+    left: -50px;
+}
+.card:hover .main .right{
+    right: -50px;
+}
+.card1{
+    position: relative;
+    width: 230px;
+    height: 300px;
+}
+.boxshadow1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #0000ff;
+    transform: scale(0.8);
+    box-shadow: 0 30px 70px 0 #0000ff;
+    transition: all 0.5s ease-in-out;
+}
+.main1{
+    background-color: #0000ff;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        0,
+        rgb(0,0,62) 0%,
+        rgb(0,0,255) 60%,
+        rgb(0,0,62) 100%
+    );
+    position: relative;
+    clip-path: 
+    polygon(
+        0 0,
+        100% 0,
+        100% 40px,
+        100% calc(100% - 40px),
+        calc(100% - 40px) 100%,
+        40px 100%,
+        0 calc(100% - 40px)
+    );
+    box-shadow: rgb(0,0,255) 0 7px 29px 0;
+    transition: all 0.5s ease-in-out;
+}
+.top1{
+    position: absolute;
+    width: 0;
+    left: 0;
+    top: 0;
+    height: 0;
+    z-index: 2;
+    border-top: 115px solid #000;
+    border-left: 115px solid transparent;
+    border-right: 115px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+.side1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: #000;
+    height: 101%;
+    clip-path: 
+    polygon(
+        0 0,
+        50% 0,
+        95% 45%,
+        100% 100%,
+        0 100%
+    );
+    transition: all 0.5s ease-in-out;
+}
+.left1{
+    left: 0;
+}
+.right1{
+    right: 0;
+    transform: translateX(50%) scale(-1,1);
+}
+.card1:hover .main1 .top1{
+    top: -50px;
+}
+.card1:hover .main1 .left1{
+    left: -50px;
+}
+.card1:hover .main1 .right1{
+    right: -50px;
+}
+.card2{
+    position: relative;
+    width: 230px;
+    height: 300px;
+}
+.boxshadow2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffff00;
+    transform: scale(0.8);
+    box-shadow: 0 30px 70px 0 #ffff00;
+    transition: all 0.5s ease-in-out;
+}
+.main2{
+    background-color: #ffff00;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        0,
+        rgb(62,62,0) 0%,
+        rgb(255,255,0) 60%,
+        rgb(62,62,0) 100%
+    );
+    position: relative;
+    clip-path: 
+    polygon(
+        0 0,
+        100% 0,
+        100% 40px,
+        100% calc(100% - 40px),
+        calc(100% - 40px) 100%,
+        40px 100%,
+        0 calc(100% - 40px)
+    );
+    box-shadow: rgb(255,255,0) 0 7px 29px 0;
+    transition: all 0.5s ease-in-out;
+}
+.top2{
+    position: absolute;
+    width: 0;
+    left: 0;
+    top: 0;
+    height: 0;
+    z-index: 2;
+    border-top: 115px solid #000;
+    border-left: 115px solid transparent;
+    border-right: 115px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+.side2{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: #000;
+    height: 101%;
+    clip-path: 
+    polygon(
+        0 0,
+        50% 0,
+        95% 45%,
+        100% 100%,
+        0 100%
+    );
+    transition: all 0.5s ease-in-out;
+}
+.left2{
+    left: 0;
+}
+.right2{
+    right: 0;
+    transform: translateX(50%) scale(-1,1);
+}
+.card2:hover .main2 .top2{
+    top: -50px;
+}
+.card2:hover .main2 .left2{
+    left: -50px;
+}
+.card2:hover .main2 .right2{
+    right: -50px;
+}
+.card3{
+    position: relative;
+    width: 230px;
+    height: 300px;
+}
+.boxshadow3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #00ff00;
+    transform: scale(0.8);
+    box-shadow: 0 30px 70px 0 #00ff00;
+    transition: all 0.5s ease-in-out;
+}
+.main3{
+    background-color: #00ff00;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        0,
+        rgb(0,62,0) 0%,
+        rgb(0,255,0) 60%,
+        rgb(0,62,0) 100%
+    );
+    position: relative;
+    clip-path: 
+    polygon(
+        0 0,
+        100% 0,
+        100% 40px,
+        100% calc(100% - 40px),
+        calc(100% - 40px) 100%,
+        40px 100%,
+        0 calc(100% - 40px)
+    );
+    box-shadow: rgb(0,255,0) 0 7px 29px 0;
+    transition: all 0.5s ease-in-out;
+}
+.top3{
+    position: absolute;
+    width: 0;
+    left: 0;
+    top: 0;
+    height: 0;
+    z-index: 2;
+    border-top: 115px solid #000;
+    border-left: 115px solid transparent;
+    border-right: 115px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+.side3{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: #000;
+    height: 101%;
+    clip-path: 
+    polygon(
+        0 0,
+        50% 0,
+        95% 45%,
+        100% 100%,
+        0 100%
+    );
+    transition: all 0.5s ease-in-out;
+}
+.left3{
+    left: 0;
+}
+.right3{
+    right: 0;
+    transform: translateX(50%) scale(-1,1);
+}
+.card3:hover .main3 .top3{
+    top: -50px;
+}
+.card3:hover .main3 .left3{
+    left: -50px;
+}
+.card3:hover .main3 .right3{
+    right: -50px;
+}
+.card4{
+    position: relative;
+    width: 230px;
+    height: 300px;
+}
+.boxshadow4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ff00ff;
+    transform: scale(0.8);
+    box-shadow: 0 30px 70px 0 #ff00ff;
+    transition: all 0.5s ease-in-out;
+}
+.main4{
+    background-color: #ff00ff;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        0,
+        rgb(62,0,62) 0%,
+        rgb(255,0,255) 60%,
+        rgb(62,0,62) 100%
+    );
+    position: relative;
+    clip-path: 
+    polygon(
+        0 0,
+        100% 0,
+        100% 40px,
+        100% calc(100% - 40px),
+        calc(100% - 40px) 100%,
+        40px 100%,
+        0 calc(100% - 40px)
+    );
+    box-shadow: rgb(255,0,255) 0 7px 29px 0;
+    transition: all 0.5s ease-in-out;
+}
+.top4{
+    position: absolute;
+    width: 0;
+    left: 0;
+    top: 0;
+    height: 0;
+    z-index: 2;
+    border-top: 115px solid #000;
+    border-left: 115px solid transparent;
+    border-right: 115px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+.side4{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: #000;
+    height: 101%;
+    clip-path: 
+    polygon(
+        0 0,
+        50% 0,
+        95% 45%,
+        100% 100%,
+        0 100%
+    );
+    transition: all 0.5s ease-in-out;
+}
+.left4{
+    left: 0;
+}
+.right4{
+    right: 0;
+    transform: translateX(50%) scale(-1,1);
+}
+.card4:hover .main4 .top4{
+    top: -50px;
+}
+.card4:hover .main4 .left4{
+    left: -50px;
+}
+.card4:hover .main4 .right4{
+    right: -50px;
+}
